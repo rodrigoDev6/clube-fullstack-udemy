@@ -1,0 +1,13 @@
+-O que é um callback:
+  Funções passadas como parâmetro para outras funções
+- Verificar seécallback com is_callable
+- call_user_func
+ - Chama uma funçãoeseu parâmetro
+ - Chamar primeiro parâmetro com array caso for um objeto com método estático ou nãoequeira usar um método dele.
+- call_user_func dentro de outras funções
+- __invoke pode ser passado como callback
+ - Instanciar objetoepassar como callback para call_user_func ou para outra função
+- call_user_func_array
+  Passa parâmetros por array
+- Metodos de objetos podem ser passados como callbacks
+- Usar uma closure como callback
