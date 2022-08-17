@@ -1,10 +1,20 @@
-<h1>Se cadastre no site:</h1>
-<br>
-<form action="teste.php" method="post">
+<h1>Contato</h1>
 
-    <label for="name">Nome:</label>
-    <input type="text" class="input-group" name="name" id="name" placeholder="Digite seu nome aqui">
+<form action="" method="post">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="name" class="form-control" id="name" placeholder="name@example.com">
+    </div>
 
-    <br>
-    <button type="submit" class="btn btn-primary mt-2">Cadastrar</button>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+        <label for="message" class="form-label">Mensagem</label>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+    </div>
+
+    <input name="btn-send" id="btn-send" class="btn btn-primary" type="submit" value="Enviar">
 </form>
