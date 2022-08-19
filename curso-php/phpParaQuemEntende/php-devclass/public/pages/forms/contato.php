@@ -8,7 +8,7 @@ $validate = validate([
     'message' => 's',
 ]);
 
-dd($validate->message);
+// dd($validate->message);
 
 echo "{$validate->name} <br>";
 echo "{$validate->email} <br>";
