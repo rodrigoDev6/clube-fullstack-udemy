@@ -1,5 +1,15 @@
 <?php
 
-require '../../../app/functions/custom.php';
+require '../../../bootstrap.php';
 
-dd($_POST);
+$validate = validate([
+    'name' => 's',
+    'email' => 'e',
+    'message' => 's',
+]);
+
+dd($validate->message);
+
+echo "{$validate->name} <br>";
+echo "{$validate->email} <br>";
+echo "{$validate->message} <br>";

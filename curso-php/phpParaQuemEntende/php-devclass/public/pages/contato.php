@@ -3,12 +3,12 @@
 <form action="/pages/forms/contato.php" method="POST">
     <div class="mb-3">
         <label for="name" class="form-label">Name</label>
-        <input type="name" class="form-control" name="name" placeholder="name@example.com">
+        <input type="name" class="form-control" name="name" placeholder="name">
     </div>
 
 
     <div class="mb-3">
-        <label for="email" class="form-label">Email:</label>
+        <label for="email" class="form-label">E-mail:</label>
         <input type="email" class="form-control" name="email" placeholder="name@example.com">
     </div>
     <div class="mb-3">

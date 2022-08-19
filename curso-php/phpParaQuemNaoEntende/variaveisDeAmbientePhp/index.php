@@ -1,9 +1,8 @@
-<?php
+    <?php
+    require './vendor/autoload.php';
 
-require './vendor/autoload.php';
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
-
-// var_dump($_ENV);
-var_dump($_SERVER);
+    // var_dump($_ENV);
+    var_dump($_SERVER);
