@@ -17,7 +17,7 @@
 
     <div class="mb-3">
         <label for="subject" class="form-label">Assunto:</label>
-        <input type="subject" class="form-control" name="subject" placeholder="Assunto do contato">
+        <input type="text" class="form-control" name="subject" placeholder="Assunto do contato">
     </div>
 
     <div class="mb-3">

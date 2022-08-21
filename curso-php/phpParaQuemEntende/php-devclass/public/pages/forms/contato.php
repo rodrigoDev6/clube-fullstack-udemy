@@ -4,7 +4,6 @@ require '../../../bootstrap.php';
 
 if (isEmpty()) {
     flash('message', 'preencha todos os campos');
-
     return redirect('contato');
 }
 
