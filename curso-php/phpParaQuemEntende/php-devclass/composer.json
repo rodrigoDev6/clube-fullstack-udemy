@@ -1,13 +1,11 @@
 {
   "name": "rodrigodev/php-devclass",
   "autoload": {
-    "psr-4": {
-      "Rodrigodev\\PhpDevclass\\": "src/"
-    },
     "files": [
       "app/functions/pages.php",
       "app/functions/custom.php",
-      "app/functions/validate.php"
+      "app/functions/validate.php",
+      "app/functions/flash.php"
     ]
   },
   "authors": [
