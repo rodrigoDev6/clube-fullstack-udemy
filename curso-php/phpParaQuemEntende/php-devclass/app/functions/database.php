@@ -16,15 +16,14 @@ function connect()
 
 function create($table, $fields)
 {
-    if (!is_array($fields)) {
-        $fields = (array) $fields;
-    }
+    !is_array($fields) ? ($fields = (array) $fields) : $fields;
 
-    $sql = "insert into {$table}";
-    $sql .= '(' . implode(',', array_keys($fields)) . ')';
-    $sql .= ' values(:' . implode(',:', array_keys($fields)) . ');';
+    $collumns = implode(',', array_keys($fields));
+    $itemValues = implode(',:', array_keys($fields));
+
+    $sql = "INSERT INTO {$table}({$collumns}) VALUES (:{$itemValues})";
+
     $pdo = connect();
-
     $insert = $pdo->prepare($sql);
 
     return $insert->execute($fields);
@@ -60,25 +59,18 @@ function update($table, $fields, $where)
 {
     $pdo = connect();
 
-    if (!is_array($fields)) {
-        $fields = (array) $fields;
-    }
+    !is_array($fields) ? ($fields = (array) $fields) : $fields;
 
     $data = array_map(function ($field) {
         return "{$field} = :{$field}";
     }, array_keys($fields));
 
-    $sql = "UPDATE {$table} SET ";
-    $sql .= implode(',', $data);
-    $sql .= " WHERE {$where[0]} = :{$where[0]}";
+    $collumns = implode(',', $data);
+    $sql = "UPDATE {$table} SET {$collumns} WHERE {$where[0]} = :{$where[0]}";
 
-    //	$data = array_merge($fields, [$where[0] => $where[1]]);
     $data = array_merge($fields, [$where[0] => $where[1]]);
 
-    // dd($data);
-
     $update = $pdo->prepare($sql);
-
     $update->execute($data);
 
     return $update->rowCount();

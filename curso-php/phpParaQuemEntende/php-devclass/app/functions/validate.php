@@ -37,9 +37,8 @@ function isEmpty()
     $empty = false;
 
     foreach ($request as $key => $value) {
-        if (empty($request[$key])) {
-            $empty = true;
-        }
+        empty($request[$key]) ? ($empty = true) : $empty;
+        ctype_space($request[$key]) ? ($empty = true) : $empty;
     }
 
     return $empty;

@@ -26,5 +26,5 @@
     </div>
 
     <button class="btn btn-primary" type="submit">Cadastrar</button>
-    <a href="?page=" class="btn btn-danger"> Voltar</a>
+    <a href="/" class="btn btn-danger"> Voltar</a>
 </form>
