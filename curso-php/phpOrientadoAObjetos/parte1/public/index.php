@@ -10,7 +10,7 @@ require '../vendor/autoload.php';
 // echo $person->getDataPerson();
 
 $upload = new UploadImages();
-$upload->file = 'fotoPessoal.jpg';
+$upload->file('fotoPessoal2.jpg');
 $upload->rename();
 echo "o arquivo {$upload->file} foi renomeado para {$upload->upload()}";
 ?>

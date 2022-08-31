@@ -6,6 +6,11 @@ class UploadImages
     public $newName;
     public $extensions = ['png', 'jpg', 'webp'];
 
+    public function file($file)
+    {
+        $this->file = $file;
+    }
+
     function extension()
     {
         return pathinfo($this->file, PATHINFO_EXTENSION);
