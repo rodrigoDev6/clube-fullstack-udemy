@@ -1,0 +1,19 @@
+{
+    "name": "rodrigolima/parte1",
+    "autoload": {
+        "files": [
+            "App/classes/Person.php"
+        ],
+        "psr-4": {
+            "App\\":"App"
+        }
+    },
+    
+    "authors": [
+        {
+            "name": "rodrigoDev6",
+            "email": "rodrigolima.alves21@gmail.com"
+        }
+    ],
+    "require": {}
+}
