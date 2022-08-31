@@ -1,0 +1,18 @@
+{
+  "name": "rodrigodev/projeto1",
+  "autoload": {
+    "files": [
+      "app/helpers/constants.php"
+    ],
+    "psr-4": {
+      "app\\": "app"
+    }
+  },
+  "authors": [
+    {
+      "name": "rodrigodev6",
+      "email": "rodrigolima.alves21@gmail.com"
+    }
+  ],
+  "require": {}
+}
