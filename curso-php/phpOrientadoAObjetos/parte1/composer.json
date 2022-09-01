@@ -1,13 +1,14 @@
 {
   "name": "rodrigolima/parte1",
   "autoload": {
-    "files": [
-      "App/classes/Person.php",
-      "App/classes/UploadImages.php"
-    ],
     "psr-4": {
-      "App\\": "App"
-    }
+      "app\\": "app"
+    },
+    "files": [
+      "app/classes/Cars.php",
+      "app/classes/Person.php",
+      "app/classes/UploadImages.php"
+    ]
   },
   "authors": [
     {
