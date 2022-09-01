@@ -1,0 +1,17 @@
+{
+    "name": "rodrigodev/get-and-post",
+    "autoload": {
+        "psr-4": {
+            "Rodrigodev\\GetAndPost\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rodrigodev6",
+            "email": "rodrigolima.alves21@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}

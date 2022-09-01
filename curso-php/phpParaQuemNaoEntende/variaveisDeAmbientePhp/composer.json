@@ -1,0 +1,17 @@
+{
+    "name": "rodrigodev/variaveis-de-ambiente-php",
+    "autoload": {
+        "psr-4": {
+            "Rodrigodev\\VariaveisDeAmbientePhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rodrigodev6",
+            "email": "rodrigolima.alves21@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}

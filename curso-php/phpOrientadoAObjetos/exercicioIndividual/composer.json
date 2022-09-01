@@ -1,0 +1,18 @@
+{
+  "name": "rodrigodev/exercicio-individual",
+  "autoload": {
+    "psr-4": {
+      "app\\": "app"
+    },
+    "files": [
+      "app/classes/Usuario.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "rodrigodev6",
+      "email": "rodrigolima.alves21@gmail.com"
+    }
+  ],
+  "require": {}
+}
