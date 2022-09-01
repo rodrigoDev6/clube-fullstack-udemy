@@ -2,7 +2,7 @@
 
 namespace app\classes;
 
-class Cars
+class Car
 {
     public $name;
     public $brand;

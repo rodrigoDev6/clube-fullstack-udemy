@@ -1,9 +1,11 @@
 <?php
 require '../vendor/autoload.php';
 
-use app\classes\Cars;
+use app\classes\Car;
 use app\classes\Person;
+use app\classes\Upload;
 use app\classes\UploadImages;
+
 
 echo 'Classe Person:<br>';
 
@@ -16,15 +18,17 @@ echo $person->getDataPerson();
 echo '<br>===================== <br>';
 echo 'Classe UploadImages: <br>';
 
-$upload = new UploadImages();
-$upload->file('fotoPessoal2.jpg');
-echo 'extensão do arquivo .' . $upload->extension() . '<br>';
-$upload->rename();
+$upload = new UploadImages('test.jpg');
+echo 'extensão do arquivo .' . $upload->newName . '<br>';
+// $upload->rename();
 echo "o arquivo {$upload->file} foi renomeado para {$upload->upload()}";
 
 echo '<br>===================== <br>';
-echo 'Método contrutor com a Classe Cars: <br>';
+echo 'Método contrutor com a Classe Car: <br>';
 
-$car = new Cars('Lamborghini Huracan', 'Lamborghini', '2014');
+$car = new Car('Lamborghini Huracan', 'Lamborghini', '2014');
 echo $car->getDataCar();
+
+echo '<br>===================== <br>';
+echo 'Herança de classes com Classe: <br>';
 ?>

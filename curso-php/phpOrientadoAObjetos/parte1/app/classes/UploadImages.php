@@ -2,31 +2,19 @@
 
 namespace app\classes;
 
-class UploadImages
+class UploadImages extends Upload
 {
-    public $file;
-    public $newName;
     public $extensions = ['png', 'jpg', 'webp'];
 
-    public function file($file)
+    public function __construct()
     {
+        parent::__construct($file);
         $this->file = $file;
     }
 
-    function extension()
+    
+    public function upload()
     {
-        return pathinfo($this->file, PATHINFO_EXTENSION);
-    }
-
-    function rename()
-    {
-        $uniqueId = uniqid();
-
-        $this->newName = $uniqueId . '.' . $this->extension();
-    }
-
-    function upload()
-    {
-        return $this->newName;
+        return $this->rename();
     }
 }

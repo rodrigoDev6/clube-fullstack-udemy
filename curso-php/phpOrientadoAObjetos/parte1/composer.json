@@ -5,8 +5,9 @@
       "app\\": "app"
     },
     "files": [
-      "app/classes/Cars.php",
+      "app/classes/Car.php",
       "app/classes/Person.php",
+      "app/classes/Upload.php",
       "app/classes/UploadImages.php"
     ]
   },
