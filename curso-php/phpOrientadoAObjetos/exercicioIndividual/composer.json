@@ -5,7 +5,8 @@
       "app\\": "app"
     },
     "files": [
-      "app/classes/Usuario.php"
+      "app/classes/Usuario.php",
+      "app/classes/Permissao.php"
     ]
   },
   "authors": [

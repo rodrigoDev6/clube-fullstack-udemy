@@ -2,14 +2,16 @@
 
 namespace app\classes;
 
-class Usuario
+class Usuario extends Exception
 {
     private $nome;
+    private $nivel;
     private $telefone;
     private $data_cadastro;
 
     public function preencherDados($nome, $telefone, $nivel)
     {
+
         $this->nome = $nome;
         $this->telefone = $telefone;
         $this->nivel = $nivel;
@@ -35,3 +37,6 @@ class Usuario
         return '<br> <br>Usuario casastrado';
     }
 }
+
+
+        
