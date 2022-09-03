@@ -6,11 +6,14 @@ use app\classes\Usuario as Usuario;
 
 $usuario = new Usuario();
 
-$usuario->preencherDados("Rodrigo", '2197502s8324', 'admin');
-
+try {
+    $usuario->preencherDados('Rodrigo', 21975028324, 'admin');
+} catch (\Exception $e) {
+    echo $e->getMessage();
+    die();
+}
 echo "Nome: {$usuario->getNome()} <br>";
 echo "Telefone: {$usuario->getTelefone()} <br>";
 echo "Data de Cadastro: {$usuario->getDataCadastro()} <br>";
-echo "Nível: {$usuario->nivel}";
-
+echo 'Nível: ';
 echo $usuario->cadastrar();
