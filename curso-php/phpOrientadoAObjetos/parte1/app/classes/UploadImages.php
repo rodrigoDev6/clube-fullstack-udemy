@@ -2,17 +2,20 @@
 
 namespace app\classes;
 
+use app\traits\ValidationFile;
+
 class UploadImages extends Upload
 {
-    public $extensions = ['png', 'jpg', 'webp'];
+    use ValidationFile;
 
-    public function __construct()
+    private $extensions = ['png', 'jpg', 'webp'];
+
+    public function __construct($file)
     {
         parent::__construct($file);
         $this->file = $file;
     }
 
-    
     public function upload()
     {
         return $this->rename();

@@ -6,7 +6,6 @@ use app\classes\Person;
 use app\classes\Upload;
 use app\classes\UploadImages;
 
-
 echo 'Classe Person:<br>';
 
 $person = new Person();
@@ -18,7 +17,8 @@ echo $person->getDataPerson();
 echo '<br>===================== <br>';
 echo 'Classe UploadImages: <br>';
 
-$upload = new UploadImages('test.jpg');
+$upload = new UploadImages('fotoPessoal.jpg');
+$upload->validation();
 echo 'extensão do arquivo .' . $upload->newName . '<br>';
 // $upload->rename();
 echo "o arquivo {$upload->file} foi renomeado para {$upload->upload()}";

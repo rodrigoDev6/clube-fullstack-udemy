@@ -4,15 +4,14 @@ namespace app\classes;
 
 class Upload
 {
-
     private $file;
 
-    public function __construct()
+    public function __construct($file)
     {
         $this->file = $file;
     }
 
-    private function extension()
+    protected function extension()
     {
         return pathinfo($this->file, PATHINFO_EXTENSION);
     }
@@ -22,6 +21,5 @@ class Upload
         $uniqueId = uniqid(true);
         return $uniqueId . '.' . $this->extension();
     }
-
 }
 ?>
