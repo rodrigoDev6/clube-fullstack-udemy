@@ -1,0 +1,16 @@
+{
+  "name": "rodrigodev/carrinho-de-compras-php",
+  "authors": [
+    {
+      "name": "rodrigodev6",
+      "email": "rodrigolima.alves21@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "app\\": "app"
+    },
+    "files": []
+  }
+}
