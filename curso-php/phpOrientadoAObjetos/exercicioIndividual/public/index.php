@@ -2,7 +2,7 @@
 
 require '../vendor/autoload.php';
 
-use app\classes\Usuario as Usuario;
+use app\classes\Usuario;
 
 $usuario = new Usuario();
 
@@ -15,5 +15,5 @@ try {
 echo "Nome: {$usuario->getNome()} <br>";
 echo "Telefone: {$usuario->getTelefone()} <br>";
 echo "Data de Cadastro: {$usuario->getDataCadastro()} <br>";
-echo 'Nível: ';
+echo "Nível: {$usuario->nivel}";
 echo $usuario->cadastrar();
