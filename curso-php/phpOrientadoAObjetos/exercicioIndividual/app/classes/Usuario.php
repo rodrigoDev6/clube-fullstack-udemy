@@ -4,7 +4,7 @@ namespace app\classes;
 
 class Permissao
 {
-    public $nivel;
+    private $nivel;
 
     protected function setNivel($nivel)
     {
@@ -35,10 +35,9 @@ class Usuario extends Permissao
             throw new \Exception('O telefone deve ser número', 2);
         }
 
-        parent::setNivel($nivel);
-
         $this->nome = $nome;
         $this->telefone = $telefone;
+        $this->nivel = parent::setNivel($nivel);
         $this->data_cadastro = date('d/m/Y H:i:s');
     }
 
