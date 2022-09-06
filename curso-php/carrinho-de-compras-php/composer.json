@@ -11,6 +11,9 @@
     "psr-4": {
       "app\\": "app"
     },
-    "files": []
+    "files": [
+      "app/classes/Cart.php",
+      "app/classes/CartProducts.php"
+    ]
   }
 }

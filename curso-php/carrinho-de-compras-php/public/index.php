@@ -8,11 +8,12 @@ use app\classes\Cart;
 
 $cart = new Cart();
 $productsInCart = $cart->cart();
-$cart->dump();
+
+// $cart->dump();
 
 // $cart->quantity(1, 2);
 // $cart->remove(4);
-// $cart->clear();
+//$cart->clear();
 ?>
 
 <!DOCTYPE html>
