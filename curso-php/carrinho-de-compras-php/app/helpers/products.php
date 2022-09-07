@@ -1,7 +1,7 @@
 <?php
 
 return [
-    1 => ['name' => 'Cabo', 'price' => '2314'],
+    1 => ['name' => 'Cabo HDMi', 'price' => '2314'],
     2 => ['name' => 'Tv Smart', 'price' => '5587'],
     3 => ['name' => 'Motorola', 'price' => '4872'],
     4 => ['name' => 'Iphone', 'price' => '8125'],
