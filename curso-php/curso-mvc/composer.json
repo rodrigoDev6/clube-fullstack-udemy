@@ -1,0 +1,19 @@
+{
+  "name": "rodrigodev/curso-mvc",
+  "autoload": {
+    "psr-4": {
+      "app\\": "app",
+      "core\\": "core"
+    }
+  },
+  "authors": [
+    {
+      "name": "rodrigodev6",
+      "email": "rodrigolima.alves21@gmail.com"
+    }
+  ],
+  "require": {
+    "twig/twig": "^3.4",
+    "twig/extra-bundle": "^3.4"
+  }
+}
