@@ -21,3 +21,8 @@ if (is_numeric($number3) && is_numeric($number1)) {
 // echo ceil($number3);//arredonda para cima
 
 // echo round($number2); //arredondar inteligentemente
+echo floor($number2) . ' || ';//arredonda para baixo
+
+echo ceil($number3) . ' || ';   //arredonda para cima
+
+echo round($number2); //arredondar inteligentemente

@@ -41,13 +41,13 @@ $productsInCart = $cart->cart();
             <?php foreach ($products as $product): ?>
             <li>
                 <?php echo $product->name; ?> | R$ <?php echo number_format(
-     $product->price,
-     2,
-     ',',
-     '.'
- ); ?>
+    $product->price,
+    2,
+    ',',
+    '.'
+); ?>
             </li>
-            <a href="add.php?id=<?php echo $product->id; ?>">add to cart</a>
+            <a  href="add.php?id=<?php echo $product->id; ?>">add to cart</a>
             <?php endforeach; ?>
         </ul>
     </div>
