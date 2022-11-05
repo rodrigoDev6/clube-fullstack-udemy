@@ -1,0 +1,15 @@
+{
+    "name": "rodrigo/php-orientado-aobjetos2021",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rodrigo de Lima Alves",
+            "email": "rodrigolima.alves21@gmail.com"
+        }
+    ],
+    "require": {}
+}
